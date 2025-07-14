@@ -10,10 +10,7 @@
 			--bg-color: #121212;
 			--text-color: lightgrey;
 			--switch-bg: #333;
-			--switch-bg-checked: #ccc;
 			--switch-circle: #fff;
-			--switch-circle-checked: #333;
-			--icon-color: #000;
 			&:has(#theme-toggle:checked) {
 				--bg-color: white;
 				--text-color: black;
@@ -47,7 +44,6 @@
 					cursor: pointer;
 					background-color: var(--switch-bg);
 					border-radius: 34px;
-					transition: 0.4s;
 					&::before {
 						content: "";
 						position: absolute;
@@ -61,15 +57,13 @@
 					}
 					& .icon {
 						position: absolute;
-						top: 50%;
-						transform: translateY(-50%);
 						font-size: 1.2rem;
 						&.left {
 							left: 4px;
 						}
 						&.right {
 							right: 3px;
-							top: 16px;
+							top: 1px;
 						}
 					}
 				}
